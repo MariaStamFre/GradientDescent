@@ -11,6 +11,7 @@ std::vector<double> grad(const std::vector<double> &x){
 int main() {
 
     std::vector<double> x_0{0,0}; //starting point
+    //@note it is better to enucleate parameters ina struct. More flexible
     double tolr = 1e-6; //residual tolerance
     double tols = 1e-6; //step size tolerance
     double alpha_0 = 0.1; //initial learning rate
